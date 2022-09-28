@@ -1,0 +1,79 @@
+*{ box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body {
+    height: 100%;
+}
+
+header {
+	display: grid;
+    justify-items: start;
+    align-items: end;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"logo menu";
+}
+.logo2 {
+    display: none;
+}
+nav { 
+       ul {
+    list-style: none;
+        }
+      li {
+    display: inline-block;
+    margin: 0 10px;
+          }
+      a {
+    text-decoration: none;
+    font-size: 1.5rem;
+        }
+     &:hover { color: grey;
+
+          }
+.navbar {display: none;
+         }
+        }
+
+main{height: 100%;
+}
+
+.titulo {font-family: 'Open Sans 300', sans-serif;
+         font-size: 3rem;
+         margin: 30px;
+         
+}
+.abajo {height: 50%;
+}
+
+footer {
+     display: grid;
+    
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: 1fr;
+     grid-template-areas: 
+     "redes derechos";
+        
+}
+.lugar  {height: 100%;}
+.table {
+        margin: 25px;
+        height: 100%;
+}
+
+@media screen and (max-width: 1370px) {
+
+.navbar {display: inline-block
+}
+.menu {display: none;
+}
+.logo1 {display: none;
+}
+.logo2 {display: inline-block;
+                height: 100px;
+}
+    
+}
